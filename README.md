@@ -1,8 +1,8 @@
-# 💻 VTU Data Analytics Internship
+# 💻 VTU Internship
 
-## 👩‍💻 Name: Bhavana  
-## 🎓 USN: 1BM24MC075  
-## 🏫 College: VTU  
+## 👩‍💻 Name: Bhavana KN 
+## 🎓 USN: 4MH24MC008
+## 🏫 College: VTU
 
 ---
 
