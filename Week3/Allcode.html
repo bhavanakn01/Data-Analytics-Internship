@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 350px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        #message {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+
+            if (name == "" || email == "") {
+                document.getElementById("message").innerHTML =
+                "<span style='color:red;'>Please fill all required fields!</span>";
+                return false;
+            }
+
+            document.getElementById("message").innerHTML =
+            "<span style='color:green;'>Registration Successful!</span>";
+
+            return false; 
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <form onsubmit="return validateForm()">
+
+        Name:
+        <input type="text" id="name">
+
+        Email:
+        <input type="email" id="email">
+
+        Phone:
+        <input type="text">
+
+        Password:
+        <input type="password">
+
+        Gender:
+        <br>
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Male
+        <br><br>
+
+        <button type="submit">Register</button>
+
+        <p id="message"></p>
+
+    </form>
+</div>
+
+</body>
+</html>
