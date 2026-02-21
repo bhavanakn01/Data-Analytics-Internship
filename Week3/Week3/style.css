@@ -1,0 +1,16 @@
+body {
+    background-color: #f0f8ff;
+    font-family: Arial;
+    margin: 20px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    border: none;
+}
